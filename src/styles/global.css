@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--main-color-gray7);
+  background: var(--main-bg-color);
+}
+
+body,
+input,
+button,
+textarea {
+  font: var(--main-font-sz-regular);
+}
+
+:root {
+  --main-bg-color: #fbf1fe;
+
+  --main-color-yellow: #e4fd01;
+
+  --main-color-primary: #5e1475;
+  --main-color-purple7: #b10be5;
+  --main-color-purple8: #8712ab;
+
+  --main-color-gray1: #fafafa;
+  --main-color-gray2: #f2f2f3;
+  --main-color-gray6: #868e96;
+  --main-color-gray7: #495057;
+  --main-color-gray8: #343a40;
+
+  --main-color-danger: #dc143c;
+  --main-color-success: #2dce89;
+  --main-color-light: #9586a8;
+
+  --main-font-sz-title: 700 54px "IBM Plex Sans", sans-serif;
+  --main-font-sz-medium: 500 36px "IBM Plex Sans", sans-serif;
+  --main-font-sz-regular: 400 24px "IBM Plex Sans", sans-serif;
+
+  --main-font-sz-input: 400 14px "IBM Plex Sans", sans-serif;
+  --main-font-sz-checkbox: 400 13px "IBM Plex Sans", sans-serif;
+  --main-font-sz-tiny: 400 10px "IBM Plex Sans", sans-serif;
+}

@@ -1,0 +1,133 @@
+#page-landing {
+  margin: 0 100px;
+  /* max-width: 80vw; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign-up {
+  margin-top: 150px;
+}
+
+.sign-up section {
+  max-width: 50vw;
+}
+
+.sign-up section h1 {
+  font: 700 72px "IBM Plex Sans", sans-serif;
+
+  line-height: 72px;
+  color: var(--main-color-yellow);
+}
+
+.sign-up section h2 {
+  font: 700 72px "IBM Plex Sans", sans-serif;
+  line-height: 72px;
+  color: var(--main-color-primary);
+
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+
+.sign-up section p {
+  width: 650px;
+}
+
+.card-signup {
+  height: 70vh;
+  width: 100vw;
+  max-height: 550px;
+  max-width: 360px;
+
+  background: var(--main-color-primary);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 25px;
+}
+
+.card-signup h3 {
+  font: var(--main-font-sz-medium);
+  color: var(--main-color-gray1);
+  text-align: center;
+}
+
+.card-signup input {
+  height: 40px;
+  border-radius: 5px;
+  color: var(--main-color-gray6);
+  font: var(--main-font-sz-input);
+  padding-left: 10px;
+
+  border: none;
+}
+
+.card-signup button {
+  height: 50px;
+  border-radius: 5px;
+  background: var(--main-color-purple8);
+  color: var(--main-color-gray1);
+
+  font: var(--main-font-sz-regular);
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+}
+
+.card-signup .checkbox {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  font: var(--main-font-sz-checkbox);
+  color: var(--main-color-gray2);
+}
+
+.card-signup .checkbox input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.card-signup .checkbox input:checked {
+  width: 21px;
+  height: 21px;
+
+  cursor: pointer;
+}
+
+.card-signup > .signup-footer-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-signup .signup-footer-text p {
+  font: var(--main-font-sz-checkbox);
+  color: var(--main-color-gray2);
+  width: 70px;
+}
+
+.about-course {
+  margin-top: 150px;
+}
+
+.learning-method {
+}
+
+.message {
+}
+
+.about-we {
+}
