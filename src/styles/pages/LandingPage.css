@@ -1,6 +1,5 @@
 #page-landing {
-  margin: 0 100px;
-  /* max-width: 80vw; */
+  margin: 180px 100px;
 }
 
 .wrapper {
@@ -40,7 +39,7 @@
   height: 70vh;
   width: 100vw;
   max-height: 550px;
-  max-width: 360px;
+  max-width: 440px;
 
   background: var(--main-color-primary);
   border-radius: 20px;
@@ -68,13 +67,13 @@
 }
 
 .card-signup button {
-  height: 50px;
+  height: 70px;
   border-radius: 5px;
   background: var(--main-color-purple8);
   color: var(--main-color-gray1);
 
   font: var(--main-font-sz-regular);
-  font-weight: 600;
+  font-weight: 700;
 
   display: flex;
   justify-content: center;
@@ -121,13 +120,90 @@
 
 .about-course {
   margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.square {
+  background: #ef44;
+  width: 100vw;
+  height: 80vh;
+}
+
+.about-course .about-course-text {
+  margin-left: 100px;
+}
+
+.about-course .about-course-text h1 {
+  font: var(--main-font-sz-title);
+  color: var(--main-color-primary);
+}
+
+.about-course .about-course-text p {
+  margin-top: 30px;
 }
 
 .learning-method {
+  margin-top: 150px;
+}
+
+.learning-method h1 {
+  font: var(--main-font-sz-title);
+  color: var(--main-color-primary);
+}
+
+.learning-method .learning-wrapper {
+  margin-top: 80px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.learning-method .learning-wrapper section {
+  max-width: 370px;
+}
+
+.learning-method .learning-wrapper h3 {
+  font: var(--main-font-sz-medium);
+  color: var(--main-color-gray8);
+  margin-bottom: 60px;
 }
 
 .message {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.message h2 {
+  font: var(--main-font-sz-regular);
+  color: var(--main-color-primary);
 }
 
 .about-we {
+  margin-top: 150px;
+}
+
+.about-we h1 {
+  font: var(--main-font-sz-title);
+  color: var(--main-color-primary);
+}
+
+.about-we .about-we-wrapper {
+  margin-top: 35px;
+
+  display: flex;
+}
+
+.about-we .about-we-wrapper section {
+  width: 100vw;
+}
+
+.about-we .about-we-wrapper h3 {
+  font: var(--main-font-sz-medium);
+  color: var(--main-color-gray8);
+}
+
+.about-we .about-we-wrapper p {
+  margin-top: 30px;
+  max-width: 500px;
 }

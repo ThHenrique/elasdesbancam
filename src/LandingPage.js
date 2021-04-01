@@ -45,8 +45,9 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="about-course wrapper">
-          <img src="" alt="" srcset="" />
-          <div className="">
+          <div className="square" />
+
+          <div className="about-course-text">
             <h1>Falar do curso</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -90,7 +91,7 @@ export default function LandingPage() {
         </div>
         <div className="message">
           <h2>
-            Comece agora mesmo o primeiro passo é voc~e ter vontate e não
+            Comece agora mesmo o primeiro passo é você ter vontate e não
             precisar fazer mudanças bruscas pois você vai desistir logo
           </h2>
         </div>
@@ -108,45 +109,44 @@ export default function LandingPage() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
             </section>
-            <img src="" alt="" srcset="" />
+            <div className="square" />
           </div>
         </div>
         <div className="sign-up wrapper">
-          <div className="">
+          <section>
             <h1>ELAS DESBANCAM</h1>
-            <h1>Mudar esse texto.</h1>
+            <h2>Mudar esse texto.</h2>
             <p>
               Mude(salve) sua saúde financeira aprenda mais sobre educação
-              financeira e pare de pagar mico
+              financeira e pare de pagar mico.
             </p>
             <p>
               Se você quer mudar sua situação financeira rápido sem ter
-              complicações este curso é feito pra você
+              complicações este curso é feito pra você.
             </p>
-          </div>
-          <div className="">
+          </section>
+          <div className="card-signup">
             <h3>Inscreva-se</h3>
-            <input type="text" placeholder="Nome" />
+            <input type="text" placeholder="Nome" maxLength="50" />
             <input type="email" placeholder="Email" />
             <button onClick={() => {}}>Quero me inscrever</button>
-            <div className="checkbox">
+            <label className="checkbox">
               <input
                 type="checkbox"
                 name="accept-notification"
                 id="checkbox-header"
               />
-              <label htmlFor="checkbox-header">
-                Aceito receber notificações
-              </label>
-            </div>
-            <div className="">
-              <div className="">
-                <img src="" alt="" srcset="" />
-                Lorem ipsum dolor sit amet
+              <span className="checkmark">Aceito receber notificações</span>
+            </label>
+
+            <div className="wrapper">
+              <div className="signup-footer-text">
+                <FiArrowRight size={26} color="#f5f5f5" />
+                <p>Lorem ipsum dolor sit amet</p>
               </div>
-              <div className="">
-                <img src="" alt="" srcset="" />
-                Lorem ipsum dolor sit amet
+              <div className="signup-footer-text">
+                <FiArrowRight size={26} color="#f5f5f5" />
+                <p>Lorem ipsum dolor sit amet</p>
               </div>
             </div>
           </div>
