@@ -4,16 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
-  color: var(--main-color-gray7);
-  background: var(--main-bg-color);
-}
-
-body,
-input,
-button,
-textarea {
-  font: var(--main-font-sz-regular);
+@font-face {
+  font-family: "Edo SZ";
+  src: url("../styles/fonts/edosz.ttf");
 }
 
 :root {
@@ -35,11 +28,52 @@ textarea {
   --main-color-success: #2dce89;
   --main-color-light: #9586a8;
 
-  --main-font-sz-title: 700 54px "IBM Plex Sans", sans-serif;
-  --main-font-sz-medium: 500 36px "IBM Plex Sans", sans-serif;
-  --main-font-sz-regular: 400 24px "IBM Plex Sans", sans-serif;
+  --main-font-sz-logo: 400 5.25rem "Edo SZ", sans-serif;
+  --main-font-sz-title: 700 3.5rem/1.5 "IBM Plex Sans", sans-serif;
+  --main-font-sz-medium: 500 2rem "IBM Plex Sans", sans-serif;
+  --main-font-sz-regular: 400 1.4rem/1.5 "IBM Plex Sans", sans-serif;
 
   --main-font-sz-input: 400 14px "IBM Plex Sans", sans-serif;
   --main-font-sz-checkbox: 400 13px "IBM Plex Sans", sans-serif;
   --main-font-sz-tiny: 400 10px "IBM Plex Sans", sans-serif;
+}
+
+body {
+  color: var(--main-color-gray7);
+  background: var(--main-bg-color);
+}
+
+body,
+input,
+button,
+textarea {
+  font: var(--main-font-sz-regular);
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 1080px) {
+  :root {
+    font-size: 93.75%; /* 15px */
+  }
+}
+
+@media (max-width: 970px) {
+  :root {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 75%; /* 12px */
+  }
+}
+
+@media (max-width: 590px) {
+  :root {
+    font-size: 62.25%; /* 10px */
+  }
 }

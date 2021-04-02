@@ -6,45 +6,55 @@ import "./styles/global.css";
 import "./styles/pages/LandingPage.css";
 
 export default function LandingPage() {
+  const CardSignUp = () => {
+    return (
+      <div className="card-signup">
+        <h3>Inscreva-se</h3>
+        <input type="text" placeholder="Nome" maxLength="50" />
+        <input type="email" placeholder="Email" />
+        <button onClick={() => {}}>Quero me inscrever</button>
+        <label className="checkbox">
+          <input
+            type="checkbox"
+            name="accept-notification"
+            id="checkbox-header"
+          />
+          <span className="checkmark">Aceito receber notificações</span>
+        </label>
+
+        {/* <div className="flex">
+          <div className="signup-footer-text">
+            <FiArrowRight size={26} color="#f5f5f5" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div className="signup-footer-text">
+            <FiArrowRight size={26} color="#f5f5f5" />
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div> */}
+      </div>
+    );
+  };
+
   return (
     <div id="page-landing">
       <main>
-        <div className="sign-up wrapper">
+        <div className="sign-up flex">
           <section>
             <h1>ELAS DESBANCAM</h1>
-            <h2>Domine seu valioso dinheiro em poucos dias.</h2>
+            <h2>
+              Domine seu
+              <br /> valioso dinheiro em poucos dias.
+            </h2>
             <p>
               Com nossas dicas você vai em poucos dias sentir a diferença no
               bolso, e o melhor, sem mudanças drásticas
             </p>
           </section>
-          <div className="card-signup">
-            <h3>Inscreva-se</h3>
-            <input type="text" placeholder="Nome" maxLength="50" />
-            <input type="email" placeholder="Email" />
-            <button onClick={() => {}}>Quero me inscrever</button>
-            <label className="checkbox">
-              <input
-                type="checkbox"
-                name="accept-notification"
-                id="checkbox-header"
-              />
-              <span className="checkmark">Aceito receber notificações</span>
-            </label>
 
-            <div className="wrapper">
-              <div className="signup-footer-text">
-                <FiArrowRight size={26} color="#f5f5f5" />
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-              <div className="signup-footer-text">
-                <FiArrowRight size={26} color="#f5f5f5" />
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-          </div>
+          <CardSignUp />
         </div>
-        <div className="about-course wrapper">
+        <div className="about-course flex">
           <div className="square" />
 
           <div className="about-course-text">
@@ -112,7 +122,7 @@ export default function LandingPage() {
             <div className="square" />
           </div>
         </div>
-        <div className="sign-up wrapper">
+        <div id="sign-up" className="sign-up flex">
           <section>
             <h1>ELAS DESBANCAM</h1>
             <h2>Mudar esse texto.</h2>
@@ -125,31 +135,8 @@ export default function LandingPage() {
               complicações este curso é feito pra você.
             </p>
           </section>
-          <div className="card-signup">
-            <h3>Inscreva-se</h3>
-            <input type="text" placeholder="Nome" maxLength="50" />
-            <input type="email" placeholder="Email" />
-            <button onClick={() => {}}>Quero me inscrever</button>
-            <label className="checkbox">
-              <input
-                type="checkbox"
-                name="accept-notification"
-                id="checkbox-header"
-              />
-              <span className="checkmark">Aceito receber notificações</span>
-            </label>
 
-            <div className="wrapper">
-              <div className="signup-footer-text">
-                <FiArrowRight size={26} color="#f5f5f5" />
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-              <div className="signup-footer-text">
-                <FiArrowRight size={26} color="#f5f5f5" />
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-          </div>
+          <CardSignUp />
         </div>
       </main>
     </div>

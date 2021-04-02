@@ -1,53 +1,41 @@
 #page-landing {
-  margin: 180px 100px;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+  width: min(1440px, 90vw);
 }
 
 .sign-up {
-  margin-top: 150px;
-}
-
-.sign-up section {
-  max-width: 50vw;
+  margin: 150px 0;
 }
 
 .sign-up section h1 {
-  font: 700 72px "IBM Plex Sans", sans-serif;
-
-  line-height: 72px;
+  font: var(--main-font-sz-logo);
   color: var(--main-color-yellow);
 }
 
 .sign-up section h2 {
-  font: 700 72px "IBM Plex Sans", sans-serif;
-  line-height: 72px;
+  font: var(--main-font-sz-title);
   color: var(--main-color-primary);
 
+  max-width: 500px;
   margin-top: 36px;
   margin-bottom: 26px;
 }
 
 .sign-up section p {
-  width: 650px;
+  max-width: 70%;
 }
 
 .card-signup {
-  height: 70vh;
-  width: 100vw;
-  max-height: 550px;
+  width: 80%;
   max-width: 440px;
-
+  max-height: 500px;
   background: var(--main-color-primary);
   border-radius: 20px;
 
+  padding: 0 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0 25px;
 }
 
 .card-signup h3 {
@@ -106,32 +94,28 @@
   cursor: pointer;
 }
 
-.card-signup > .signup-footer-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* .card-signup .flex .signup-footer-text {
 }
 
 .card-signup .signup-footer-text p {
   font: var(--main-font-sz-checkbox);
   color: var(--main-color-gray2);
   width: 70px;
-}
+} */
 
 .about-course {
   margin-top: 150px;
   display: flex;
-  justify-content: space-evenly;
 }
 
 .square {
   background: #ef44;
-  width: 100vw;
+  width: 100%;
   height: 80vh;
 }
 
 .about-course .about-course-text {
-  margin-left: 100px;
+  margin-top: 10px;
 }
 
 .about-course .about-course-text h1 {
@@ -166,15 +150,12 @@
 .learning-method .learning-wrapper h3 {
   font: var(--main-font-sz-medium);
   color: var(--main-color-gray8);
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
-.message {
+.message > h2 {
   margin-top: 150px;
-  text-align: center;
-}
-
-.message h2 {
+  padding: 10%;
   font: var(--main-font-sz-regular);
   color: var(--main-color-primary);
 }
@@ -195,7 +176,7 @@
 }
 
 .about-we .about-we-wrapper section {
-  width: 100vw;
+  width: 100%;
 }
 
 .about-we .about-we-wrapper h3 {
@@ -206,4 +187,35 @@
 .about-we .about-we-wrapper p {
   margin-top: 30px;
   max-width: 500px;
+}
+
+@media (max-width: 800px) {
+  .sign-up {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .card-signup {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .about-course,
+  .about-course-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learning-method .learning-wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .about-we .about-we-wrapper,
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
